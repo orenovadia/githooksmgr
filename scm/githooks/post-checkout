@@ -2,6 +2,6 @@
 ROOT_DIR=`git rev-parse --show-toplevel 2>/dev/null`
 echo "post checkout"
 # reinstall if needed
-./${ROOT_DIR}/scm/operations/install_git_hooks.sh
+${ROOT_DIR}/scm/operations/install_git_hooks.sh
 # delete pyc files
 find ${ROOT_DIR} -name '*.pyc' -delete
